@@ -41,4 +41,4 @@ class TestStore(BaseTest):
       store.save_to_db()
       item.save_to_db()
 
-      self.assertDictEqual(store.json(), {'name': 'test', 'items': [{'name': 'test_item', 'price': 17.22}]})
+      self.assertDictEqual(store.json(), {'id': 1, 'name': 'test', 'items': [{'name': 'test_item', 'price': 17.22}]})
