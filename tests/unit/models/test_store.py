@@ -11,4 +11,4 @@ class TestStore(UnitBaseTest):
   def test_json_store(self):
     store = StoreModel('test_store')
 
-    self.assertDictEqual(store.json(), {'id': 'None', 'name': 'test_store', 'items': []})
+    self.assertDictEqual(store.json(), {'id': None, 'name': 'test_store', 'items': []})
