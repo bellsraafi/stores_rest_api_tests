@@ -18,7 +18,7 @@
 							"var jsonData = JSON.parse(responseBody);",
 							"tests[\"User created successfully\"] = jsonData.message === 'User registered successfully';",
 							"",
-							"tests[\"Response time is less than 200ms\"] = responseTime < 230;",
+							"tests[\"Response time is less than 220ms\"] = responseTime < 220;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';"
@@ -65,7 +65,7 @@
 							"tests[\"Status code is 200\"] = responseCode.code === 200;",
 							"tests[\"Body contains access_token\"] = responseBody.has(\"access_token\");",
 							"",
-							"tests[\"Response time is less than 150ms\"] = responseTime < 150;",
+							"tests[\"Response time is less than 215ms\"] = responseTime < 215;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';"
@@ -111,7 +111,7 @@
 							"tests[\"Store items are an empty list\"] = jsonData.items.length === 0;",
 							"",
 							"tests[\"Successful POST request\"] = responseCode.code === 201;",
-							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"tests[\"Response time is less than 215ms\"] = responseTime < 215;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';",
@@ -153,7 +153,7 @@
 							"tests[\"Item name is returned\"] = jsonData.name === 'test_item';",
 							"tests[\"Item price is returned\"] = jsonData.price === 17.99;",
 							"tests[\"Successful POST request\"] = responseCode.code === 201;",
-							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"tests[\"Response time is less than 215ms\"] = responseTime < 215;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';"
@@ -202,7 +202,7 @@
 							"tests[\"Item 'test_item' price is returned inside 'test_store'\"] = jsonData.stores[0].items[0].price === 17.99;",
 							"",
 							"",
-							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"tests[\"Response time is less than 220ms\"] = responseTime < 220;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';"
@@ -240,7 +240,7 @@
 							"var jsonData = JSON.parse(responseBody);",
 							"tests[\"Message is returned\"] = jsonData.message === 'Item deleted';",
 							"tests[\"Successful POST request\"] = responseCode.code === 200;",
-							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"tests[\"Response time is less than 220ms\"] = responseTime < 220;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';"
@@ -279,7 +279,7 @@
 							"var jsonData = JSON.parse(responseBody);",
 							"tests[\"Store name is returned\"] = jsonData.message === 'Store deleted';",
 							"tests[\"Successful POST request\"] = responseCode.code === 200;",
-							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"tests[\"Response time is less than 220ms\"] = responseTime < 2220;",
 							"",
 							"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
 							"tests[\"Content-Type is 'application/json'\"] = postman.getResponseHeader(\"Content-Type\") === 'application/json';"
